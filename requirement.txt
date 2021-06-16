@@ -4,3 +4,4 @@ Flask==1.1.2
 Flask-Cors==3.0.10
 ibm-watson==5.1.0
 PyJWT==2.1.0
+python-dotenv==0.17.1
