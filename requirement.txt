@@ -1,0 +1,6 @@
+beautifulsoup4==4.9.1
+bs4==0.0.1
+Flask==1.1.2
+Flask-Cors==3.0.10
+ibm-watson==5.1.0
+PyJWT==2.1.0
