@@ -53,7 +53,7 @@ input={'message_type': 'text','text': chat_text}).get_result()
         audio_file.write(
             text_to_speech.synthesize(
                 response_text,
-                voice='en-GB_KateV3Voice',
+                voice='en-US_MichaelV3Voice',
                 accept='audio/mp3'        
             ).get_result().content)
 
@@ -87,7 +87,8 @@ def upload_file():
             else:
                 raise Exception("Sorry. No filename recognized")
         except Exception as excp:
+            print(excp.__traceback__)
             return str(excp),500
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
-
